@@ -50,13 +50,15 @@
 // export default Myth;
 
 import React from "react";
+import { useRef, useState } from "react";
+import WhyUs from "./WhyUs";
 
 const Myth = () => {
   return (
     <div className="relative w-full min-h-[500px] py-12">
       {/* Background Image */}
       <img
-        src="images/handImage.png"
+        src="images/whyus.jpg"
         alt="img"
         className="absolute inset-0 w-full h-full object-cover z-[-2]"
       />
@@ -64,16 +66,20 @@ const Myth = () => {
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50 z-[-1]" />
 
-      <div className="text-[40px] font-bold text-gray-100 mb-[50px] text-center">
-        WHY <span className="text-orange-500">US</span>
-        <div className="mt-[-40px] text-blue-400">______________</div>
+      <div style={{ color: "var(--color-subHeading)" }} className="text-[40px] font-bold text-gray-100 mb-[50px] text-center">
+        WHY <span style={{ color: "var(--color-orange)" }}>US</span>
+        <div style={{ color: "var(--color-littleBlue)" }} className="mt-[-40px] ">______________</div>
       </div>
 
       {/* Content */}
-      <div className="container  mx-auto px-6 h-full flex flex-col items-center justify-center">
+      <div className="container   mx-auto max-w-6xl px-6 h-full flex flex-col items-center justify-center">
         {/* Three Containers */}
         <div className="grid font-bold grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
-          <div className="bg-white/70 backdrop-blur-sm p-6 rounded-xl text-white text-center">
+          <WhyUs numbers={"1000+"} info={"Counseling and Information Sharing at Nepal-India Border"} learnMore={"Learn More"}/>
+          <WhyUs numbers={"500+"} info={"Trafficked Victims Rescued"} learnMore={"Learn More"}/>
+          <WhyUs numbers={"2500+"} info={"Girls Who Attended Safe Home & Training Centers."} learnMore={"Learn More"}/>
+
+          {/* <div className="bg-white/70 backdrop-blur-sm p-6 rounded-xl text-white text-center">
             <h3 className="text-4xl font-bold text-gray-800 mb-15  mb-2">
               1000+
             </h3>
@@ -105,7 +111,7 @@ const Myth = () => {
             <button className="border rounded-full bg-gray-700 p-2 mt-10">
               LEARN MORE
             </button>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

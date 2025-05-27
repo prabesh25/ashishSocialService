@@ -1,9 +1,13 @@
 import React from "react";
+// import "./Section/index.css";
+// import '../../../index.css';
+
+
 
 const Aboutus = () => {
   return (
     <div>
-<div style={{ backgroundColor: '#eaeff2' }} className="text-white py-20 px-6">
+        <div style={{ backgroundColor: "var(--color-primary)" }} className="text-white py-20 px-6">
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <h2 className="text-4xl font-bold mb-4">Who We Are</h2>
           <p className="text-lg leading-8">

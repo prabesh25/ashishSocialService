@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import NavBar from "./components/Layout/NavBar";
 import HeroSection from "./components/Home/HeroSection";
-import PaperCut from "./components/Section/PaperCut";
+// import PaperCut from "./components/Section/PaperCut";
 import Aboutus from "./components/Section/Aboutus";
 import Worldwide from "./components/Section/Worldwide";
 import Myth from "./components/Section/Myth";
